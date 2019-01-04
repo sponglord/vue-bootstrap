@@ -1,0 +1,21 @@
+{
+    "presets": [
+        ["env", {
+            "modules": false,
+            "targets": {
+                "browsers": "last 2 versions"
+            }
+        }],
+        "stage-2"
+    ],
+    "env": {
+        "test": {
+            "presets": [
+                ["env", {
+                    "targets": { "node": "current" }
+                }],
+                "stage-2"
+            ]
+        }
+    }
+}
